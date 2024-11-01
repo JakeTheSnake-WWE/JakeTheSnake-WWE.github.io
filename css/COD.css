@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Fill the viewport height */
+}
+
+header {
+    width: 100%;
+    background-color: rgba(155, 133, 13, 0.336);
+    padding: 10px 0;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px; /* Increased max-width for wider content */
+    margin: 20px auto; /* Center the main content */
+    padding: 20px;
+    background-color: wheat;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Allow the main area to grow */
+}
+
+.container {
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr); /* Ensure grid layout */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.tier {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 200px; /* Set a minimum height for the tier boxes */
+}
+
+.tier h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.image-container {
+    display: flex; /* Flex layout for images */
+    justify-content: center; /* Center images */
+    gap: 10px; /* Space between images */
+    margin-top: 10px; /* Space above images */
+    flex-wrap: wrap; /* Allow images to wrap if necessary */
+}
+
+.image {
+    width: 30%; /* Each image takes up 30% of the tier width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+.A { background-color: #4CAF50; }
+.B { background-color: #8BC34A; }
+.C { background-color: #FFEB3B; }
+.D { background-color: #FF9800; }
+.E { background-color: #F44336; }
+.F { background-color: #9E9E9E; }
+
+footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: wheat;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    color: antiquewhite;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
